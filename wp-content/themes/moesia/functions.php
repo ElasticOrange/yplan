@@ -295,7 +295,7 @@ if ( ! function_exists( 'moesia_nav_bar' ) ) {
 function moesia_nav_bar() {
 	echo '<div class="top-bar">
 			<div class="container">
-				<div class="site-branding col-md-4">';
+				<div class="site-branding col-md-3">';
 				if ( get_theme_mod('site_logo') ) :
 					echo '<a href="' . esc_url( home_url( '/' ) ) . '" title="';
 						bloginfo('name');
@@ -312,7 +312,7 @@ function moesia_nav_bar() {
 				endif;
 			echo '</div>';
 			echo '<button class="menu-toggle btn"><i class="fa fa-bars"></i></button>
-				<nav id="site-navigation" class="main-navigation col-md-8" role="navigation">';
+				<nav id="site-navigation" class="main-navigation col-md-9" role="navigation">';
 				wp_nav_menu( array( 'theme_location' => 'primary' ) );
 			echo '</nav>';
 			
